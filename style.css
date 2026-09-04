@@ -6,6 +6,7 @@
     --color-cinco: #f93539;
     --color-seis: #91b14f;
     --color-siete: #5089c3;
+    --color-ocho: #724d6e;
 }
 
 @font-face {
@@ -40,7 +41,7 @@ body{
 .Navbar{
     background-color: var(--color-cuatro);
     margin: 0px;
-    padding: 3px; 
+    padding: 3px;
 }
 
 .Navbar .Navbar-list{
@@ -138,6 +139,7 @@ body{
 #sections{
     background-color: var(--color-dos);
     color: var(--color-tres);
+    height: 800px;
 }
 
 .titulo-secundario{
@@ -156,13 +158,29 @@ body{
     max-width: 20%;
     margin-left: 45px;
     margin-top: 30px;
-    min-height: 300px;
+    min-height: 100px;
     border-radius: 20px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.card-uno h3{
+    margin-top: 0;
+}
+
+.card-dos h3{
+    margin-top: 0;
+}
+
+.card-tres h3{
+    margin-top: 0;
+}
+
+.card-cuatro h3{
+    margin-top: 0;
 }
 
 .card-title{
@@ -173,6 +191,21 @@ body{
 .card-parrafo{
     font-family: 'poppins-regular';
     font-size: 13px;
+    padding: 7px;
+}
+
+.enlace{
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'poppins regular';
+    color: var(--color-ocho);
+}
+
+.enlace-urgente{
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'poppins regular';
+    color: var(--color-cinco);
 }
 
 .material-symbols-outlined {
@@ -184,6 +217,23 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
+    margin-bottom: 10px;
+}
+
+.card-uno .material-symbols-outlined{
+    color: var(--color-ocho);
+}
+
+.card-dos .material-symbols-outlined{
+    color: var(--color-seis);
+}
+
+.card-tres .material-symbols-outlined{
+    color: var(--color-siete);
+}
+
+.card-cuatro .material-symbols-outlined{
+    color: var(--color-cinco);
 }
 
 .card-dos{
@@ -226,4 +276,14 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.cuadro-info{
+    margin-top: 80px;
+    padding-left: 50px;
+    background-color: var(--color-cuatro);
+    max-width: 89%;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-family: 'poppins regular';
 }
