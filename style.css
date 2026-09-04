@@ -1,0 +1,229 @@
+:root{
+    --color-uno: #fdce63;
+    --color-dos: #f6e7bb;
+    --color-tres: #161824;
+    --color-cuatro: #fefbf4;
+    --color-cinco: #f93539;
+    --color-seis: #91b14f;
+    --color-siete: #5089c3;
+}
+
+@font-face {
+    font-family: 'poppins-negrita';
+    src: url(./fuentes/poppins/Poppins-Black.ttf) format(truetype);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'poppins-finita';
+    src: url(./fuentes/poppins/Poppins-Light.ttf) format(truetype);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'poppins-regular';
+    src: url(./fuentes/poppins/Poppins-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'tan-nimbus';
+    src: url(./fuentes/tan-nimbus/tan-nimbus.otf);
+}
+
+body{
+    background-color: var(--color-cuatro);
+    margin: 0;
+    padding: 0;
+}
+
+/*  NAVEGACION DE LA PÁGINA  */
+.Navbar{
+    background-color: var(--color-cuatro);
+    margin: 0px;
+    padding: 3px; 
+}
+
+.Navbar .Navbar-list{
+    list-style-type: none ;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+
+.Navbar .Navbar-list .Navbar-items {
+    color: var(--color-tres);
+    font-family: 'poppins-regular';
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-urgent{
+    background-color: var(--color-uno); 
+    color: var(--color-tres);           
+    padding: 2px 2px;
+    border-radius: 10px;       
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-family: 'poppins-regular';
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-urgent:hover {
+    background-color: var(--color-cinco);
+    transform: translateY(-1px);
+}
+
+/*  HERO DE LA PAGINA  */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.imagen-hero {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+}
+
+.title{
+    font-family: 'tan-nimbus';
+    color: var(--color-tres);
+    font-size: 45px; 
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.title .text-decorado{
+    color: var(--color-uno);
+}
+
+.parrafo{
+    font-family: 'poppins-regular';
+    color: var(--color-tres);
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.boton-start{
+    background-color: var(--color-uno); 
+    color: var(--color-tres);           
+    padding: 2px 2px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'poppins-regular';
+    font-size: 16px;
+    padding: 15px 15px;
+    margin-left: 50px;
+}
+
+/*  SECCIONES DEL HERO  */
+#sections{
+    background-color: var(--color-dos);
+    color: var(--color-tres);
+}
+
+.titulo-secundario{
+    font-family: 'tan-nimbus';
+    font-size: 40px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.container-card{
+    display: flex;
+}
+
+.card-uno {
+    background-color: var(--color-cuatro);
+    max-width: 20%;
+    margin-left: 45px;
+    margin-top: 30px;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title{
+    font-family: 'poppins-negrita';
+    font-size: 15px;
+}
+
+.card-parrafo{
+    font-family: 'poppins-regular';
+    font-size: 13px;
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 55px!important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.card-dos{
+    background-color: var(--color-cuatro);
+    max-width: 20%;
+    margin-left: 45px;
+    margin-top: 30px;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-tres{
+    background-color: var(--color-cuatro);
+    max-width: 20%;
+    margin-left: 45px;
+    margin-top: 30px;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-cuatro{
+    background-color: var(--color-cuatro);
+    max-width: 20%;
+    margin-left: 45px;
+    margin-top: 30px;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
